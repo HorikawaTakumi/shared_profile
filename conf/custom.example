@@ -1,3 +1,4 @@
 alias saildb='sail exec laravel.test mysql -u sail -p -h mysql laravel'
 PATH=$PATH:/home/horikawa/kaisetsu/ai_secretary_management/vendor/bin
 export CONTEXT_COLOR=250
+eval "$(~/.local/bin/mise activate bash)"

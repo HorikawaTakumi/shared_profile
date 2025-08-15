@@ -13,6 +13,7 @@ sudo hostnamectl set-hostname __hostname__
 ---
 
 ```zsh
+sudo apt update -y
 sudo apt install zsh fzf bash-completion -y
 chsh -s $(which zsh)
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
@@ -23,8 +24,8 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/zsh-completions
 ln -s $HOME/.myprofile/.shared_profile ~/.shared_profile
-cp -p ~/.myprofile/p10k_lean ~/.p10k.zsh
-cp -p ~/.myprofile/custom.example ~/.myprofile/custom
+cp -p ~/.myprofile/conf/p10k_lean ~/.p10k.zsh
+cp -p ~/.myprofile/conf/custom.example ~/.myprofile/conf/custom
 sed -i '/source \$ZSH\/oh-my-zsh\.sh/s/^[^#]/# &/' ~/.zshrc
 cat << 'EOF' >> ~/.zshrc
 source ~/.shared_profile

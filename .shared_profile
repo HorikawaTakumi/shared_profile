@@ -7,7 +7,6 @@ source $CONF_DIR/ohmyzsh
 
 export PATH=$PATH
 export EDITOR=vim
-eval "$(~/.local/bin/mise activate bash)"
 
 [ -f "/usr/share/doc/fzf/examples/key-bindings.$(basename ${SHELL})" ] \
 && source "/usr/share/doc/fzf/examples/key-bindings.$(basename ${SHELL})"
