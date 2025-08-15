@@ -1,7 +1,9 @@
-source $HOME/.myprofile/alias
-source $HOME/.myprofile/path
-source $HOME/.myprofile/custom
-source $HOME/.myprofile/ohmyzsh
+CONF_DIR=$HOME/.myprofile/conf
+
+source $CONF_DIR/alias
+source $CONF_DIR/path
+source $CONF_DIR/custom
+source $CONF_DIR/ohmyzsh
 
 export PATH=$PATH
 export EDITOR=vim
