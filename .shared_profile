@@ -1,0 +1,46 @@
+ZSH_THEME="powerlevel10k/powerlevel10k"
+plugins=(
+  git
+  copypath
+  aliases
+  docker
+  docker-compose
+  aws
+  terraform
+  golang
+  copyfile
+  you-should-use
+  zsh-completions
+  zsh-syntax-highlighting
+  zsh-autosuggestions
+)
+
+source $ZSH/oh-my-zsh.sh
+
+alias en='export LANG=en_US.utf8'
+alias jp='export LANG=ja_JP.utf8'
+alias jman='man -L ja_JP.utf8'
+alias eman='man -L en_US.utf8'
+alias gps='git push'
+alias gpl='git pull'
+alias rm='rm -i'
+alias genpass='cat /dev/urandom | tr -dc "0123456789abcdefghijkmnpqrstuvwxyzABCDEFGHIJKLMNPQRSTUVWXYZ" | fold -w 12 | head -n 1'
+alias saildb='sail exec laravel.test mysql -u sail -p -h mysql laravel'
+alias profile='vi ~/.shared_profile'
+alias zshconfig="vi ~/.zshrc"
+alias loadconfig="source ~/.zshrc"
+
+PATH=$PATH:$HOME/.local/bin
+PATH=$PATH:/mnt/c/windows
+PATH=$PATH:/home/horikawa/kaisetsu/ai_secretary_management/vendor/bin
+PATH=$PATH:~/.local/go/bin
+
+export PATH=$PATH
+export EDITOR=vim
+eval "$(~/.local/bin/mise activate bash)"
+
+[ -f "/usr/share/doc/fzf/examples/key-bindings.$(basename ${SHELL})" ] && \
+source "/usr/share/doc/fzf/examples/key-bindings.$(basename ${SHELL})" && \
+echo "enable fzf for $SHELL"
+
+echo "✓ Loaded shared profile settings"
