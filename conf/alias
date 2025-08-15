@@ -10,3 +10,5 @@ alias custom="vi $CONF_DIR/custom"
 alias zshconfig="vi ~/.zshrc"
 alias loadconfig="source ~/.zshrc"
 alias showcolor="zsh $CONF_DIR/showcolor.sh"
+alias sshconfig="vi ~/.ssh/config"
+
