@@ -1,0 +1,12 @@
+alias en='export LANG=en_US.utf8'
+alias jp='export LANG=ja_JP.utf8'
+alias jman='man -L ja_JP.utf8'
+alias eman='man -L en_US.utf8'
+alias gps='git push'
+alias gpl='git pull'
+alias rm='rm -i'
+alias genpass='cat /dev/urandom | tr -dc "0123456789abcdefghijkmnpqrstuvwxyzABCDEFGHIJKLMNPQRSTUVWXYZ" | fold -w 12 | head -n 1'
+alias profile='vi ~/.myprofile/custom'
+alias zshconfig="vi ~/.zshrc"
+alias loadconfig="source ~/.zshrc"
+alias showcolor="zsh $HOME/.myprofile/showcolor.sh"

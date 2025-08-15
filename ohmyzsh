@@ -1,0 +1,16 @@
+ZSH_THEME="powerlevel10k/powerlevel10k"
+plugins=(
+  git
+  copypath
+  aliases
+  docker
+  docker-compose
+  aws
+  terraform
+  golang
+  copyfile
+  you-should-use
+  zsh-completions
+  zsh-syntax-highlighting
+  zsh-autosuggestions
+)
