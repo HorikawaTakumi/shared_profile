@@ -17,5 +17,6 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 git clone https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-completions
 ln -s $HOME/.myprofile/.shared_profile ~/.shared_profile
 sed -i '/source \$ZSH\/oh-my-zsh\.sh/s/^[^#]/# &/' ~/.zshrc
+echo "source ~/.shared_profile" >> ~/.zshrc
 source ~/.zshrc
 ```
