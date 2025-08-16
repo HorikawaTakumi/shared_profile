@@ -33,7 +33,7 @@ if [[ -z "$OHMYZSH_LOADED" ]]; then
     export OHMYZSH_LOADED=1
     source $ZSH/oh-my-zsh.sh
 fi
-source ~/.p10k.zsh
 EOF
+source ~/.p10k.zsh
 source ~/.zshrc
 ```
