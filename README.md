@@ -29,8 +29,7 @@ cp -p ~/.myprofile/conf/custom.example ~/.myprofile/conf/custom
 sed -i '/source \$ZSH\/oh-my-zsh\.sh/s/^[^#]/# &/' ~/.zshrc
 cat << 'EOF' >> ~/.zshrc
 source ~/.shared_profile
-if [[ -z "$OHMYZSH_LOADED" ]]; then
-    export OHMYZSH_LOADED=1
+if [[ "$FASTLOAD" -eq 1 ]]; then
     source $ZSH/oh-my-zsh.sh
 fi
 source ~/.p10k.zsh
