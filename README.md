@@ -27,6 +27,7 @@ ln -s $HOME/.myprofile/.shared_profile ~/.shared_profile
 cp -p ~/.myprofile/conf/p10k_lean ~/.p10k.zsh
 cp -p ~/.myprofile/conf/custom.example ~/.myprofile/conf/custom
 sed -i '/source \$ZSH\/oh-my-zsh\.sh/s/^[^#]/# &/' ~/.zshrc
+
 cat << 'EOF' >> ~/.zshrc
 source ~/.shared_profile
 if [[ "$FASTLOAD" -eq 1 ]]; then
@@ -34,5 +35,6 @@ if [[ "$FASTLOAD" -eq 1 ]]; then
 fi
 source ~/.p10k.zsh
 EOF
+
 source ~/.zshrc
 ```
