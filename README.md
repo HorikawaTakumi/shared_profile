@@ -30,7 +30,7 @@ sed -i '/source \$ZSH\/oh-my-zsh\.sh/s/^[^#]/# &/' ~/.zshrc
 
 cat << 'EOF' >> ~/.zshrc
 source ~/.shared_profile
-if [[ "$FASTLOAD" -eq 1 ]]; then
+if [[ "$FASTLOAD" != "true" ]]; then
     source $ZSH/oh-my-zsh.sh
 fi
 source ~/.p10k.zsh
