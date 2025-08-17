@@ -33,7 +33,6 @@ if [[ "$FASTLOAD" -eq 1 ]]; then
     source $ZSH/oh-my-zsh.sh
 fi
 source ~/.p10k.zsh
-
 EOF
 source ~/.zshrc
 ```
