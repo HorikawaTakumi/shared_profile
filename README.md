@@ -34,6 +34,7 @@ if [[ -z "$OHMYZSH_LOADED" ]]; then
     source $ZSH/oh-my-zsh.sh
 fi
 source ~/.p10k.zsh
+
 EOF
 source ~/.zshrc
 ```
