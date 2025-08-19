@@ -1,4 +1,11 @@
-alias saildb='sail exec laravel.test mysql -u sail -p -h mysql laravel'
-PATH=$PATH:/home/horikawa/kaisetsu/ai_secretary_management/vendor/bin
-export CONTEXT_COLOR=250
-eval "$(~/.local/bin/mise activate bash)"
+# alias
+#alias hoge='fuga'
+
+# PATH
+#PATH=$PATH:/path/to/bin
+
+# customize context(user@hostname) color for powerlevel10k
+#export CONTEXT_COLOR=250
+
+# for mise
+#eval "$(~/.local/bin/mise activate bash)"
