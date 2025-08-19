@@ -1,6 +1,6 @@
 # shered_profile
 
-oh my zsh + powerlevel10k の環境を手軽に他の環境で再現するためのリポジトリ
+oh my zsh + powerlevel10k の環境を手軽に他の環境で再現するためのリポジトリ  
 環境独自のものは custom という alias で呼び出せる conf/custom に書く
 
 ## setup
