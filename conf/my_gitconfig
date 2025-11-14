@@ -1,0 +1,14 @@
+[alias]
+   newbranch = "!f() { \
+       default_branch=$(git remote show origin | sed -n 's/.*HEAD branch: //p'); \
+       git checkout -b \"$1\"; \
+       git branch --set-upstream-to=origin/$default_branch; \
+   }; f"
+[alias]
+   pulldefaults = "!f() { \
+       default_branch=$(git remote show origin | sed -n 's/.*HEAD branch: //p'); \
+       git pull origin \"$default_branch\"; \
+   }; f"
+
+# [include]
+# 	path = ~/.myprofile/conf/my_gitconfig

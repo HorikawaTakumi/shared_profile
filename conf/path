@@ -1,5 +1,7 @@
+MISE=$HOME"/.local/share/mise/installs/"
 PATH=$PATH:$HOME/.local/bin
 PATH=$PATH:/mnt/c/windows
 PATH=$PATH:~/.local/go/bin
-PATH=$PATH:~/.local/share/mise/installs/php/8.4.10/bin
+PATH=$PATH:$HOME/blankcanvas/ai_secretary_management/vendor/bin/
+PATH=$PATH:$MISE"php/8.4.10/bin/"
 
