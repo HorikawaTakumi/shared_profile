@@ -16,9 +16,7 @@ alias vialias="vi ~/.myprofile/conf/alias"
 alias viohmyzsh="vi ~/.myprofile/conf/ohmyzsh"
 alias vipath="vi ~/.myprofile/conf/path"
 alias c="clear"
-<<<<<<< HEAD
 randstr() { cat /dev/urandom | tr -dc 'A-Za-z0-9' | head -c ${1:-8}; echo; }
-=======
 alias gld="git pulldefaults"
 alias gnb="git newbranch"
 
@@ -29,5 +27,3 @@ fix_wsl2_interop() {
         fi
     done
 }
-
->>>>>>> d22f695afb982580ac5e780f1cfce6801b503b44
