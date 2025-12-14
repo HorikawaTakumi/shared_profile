@@ -16,3 +16,4 @@ alias vialias="vi ~/.myprofile/conf/alias"
 alias viohmyzsh="vi ~/.myprofile/conf/ohmyzsh"
 alias vipath="vi ~/.myprofile/conf/path"
 alias c="clear"
+randstr() { cat /dev/urandom | tr -dc 'A-Za-z0-9' | head -c ${1:-8}; echo; }
